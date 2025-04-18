@@ -36,6 +36,11 @@ reusable functions that solve specific tasks. This activity encourages:
 // 3. Capitalize the role if needed.
 // 4. Return the result.
 
+function generateBadge(name, role) {
+    console.log("Name: " + name + ", Role: " + role);
+
+}
+generateBadge("Alice", "Speaker");
 
 // ============================================
 // 🧩 Task 2: Calculate Event Cost
@@ -51,6 +56,18 @@ reusable functions that solve specific tasks. This activity encourages:
 // 3. If so, apply a 10% discount.
 // 4. Return the final total.
 
+
+
+function calculateEventCost(attendeeNum, costPerAttendee) {
+    let eventCost = attendeeNum * costPerAttendee;
+    
+    if (attendeeNum > 100) {
+        console.log("Final Cost: " + (eventCost  *= .9));
+    } else {
+        console.log("Total Cost: " + eventCost);
+    }
+}
+calculateEventCost(101, 10);
 
 // ============================================
 // 🧩 Task 3: Validate Email
