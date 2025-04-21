@@ -81,6 +81,21 @@ calculateEventCost(101, 10);
 // 1. Check if the string includes both "@" and ".".
 // 2. Return true or false accordingly.
 
+const readline = require('readline-sync');
+const email = readline.question("Please enter your email address: ");
+
+function emailValidationFunction (email) {
+    if (email.includes("@") && email.includes(".")) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(emailValidationFunction(email));
+
+
+
 
 // ============================================
 // 🧠 Collaborative Steps
