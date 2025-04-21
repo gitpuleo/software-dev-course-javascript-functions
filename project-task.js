@@ -37,19 +37,20 @@ console.log("Welcome, Alice!");
 console.log("Welcome, Bob!");
 console.log("Welcome, Charlie!");
 
-
-function printFunction(name) {
+//refactored
+function printNameArray(name) {
    for (i=0; i<name.length; i++) {
       console.log(`Welcome,  ${name[i]}!`);
    }
 }
-printFunction(["Alice", "Bob", "Charlie"]);
+printNameArray(["Alice", "Bob", "Charlie"]);
 
 // Script 2 - Sum calculation
 let num1 = 5, num2 = 10;
 let sum = num1 + num2;
 console.log("The sum of 5 and 10 is " + sum);
 
+//refactored 
 function sumFunction(num1, num2) {
    newSum = num1 + num2;
    console.log(`The sum of ${num1} and ${num2} is ` + newSum);
@@ -64,12 +65,30 @@ sumFunction(5,10);
 let product = num1 * num2;
 console.log("The product of 5 and 10 is " + product);
 
+
+//refactored
+function productFunction (value1, value2) {
+   product = value1 * value2;
+   console.log(`The product of ${value1} and ${value2} is ${product}.`);
+}
+productFunction(5,10);
+
+
+
 // Script 4 - Print names from a list
 let names = ["Alice", "Bob", "Charlie"];
 console.log("Names in the list:");
 for (let i = 0; i < names.length; i++) {
     console.log(names[i]);
 }
+
+//refactored
+function printList (list) {
+   for (let i=0; i<list.length; i++)
+      console.log(`The names in the list are: ${list[i]}`);
+}
+printList(names);
+
 
 /*
 ===========================================
